@@ -42,7 +42,7 @@ int main(void)
 	// Given the ft_swap function:
 	// *a ^= *b wich a is 1 and b is 2 will turn in to 0000 0011 that is 3:
 	// *b ^= *a wich b is 2 and a is 3 will turn in to 0000 0001 that is 1;
-	// *a ^= *b wich a is 2 and b is 1 will turn in to 0000 0010 that is 2;
+	// *a ^= *b wich a is 3 and b is 1 will turn in to 0000 0010 that is 2;
 	// turns that a now is 2 and b is 1;
 
 	a = 1 ,b = 2;

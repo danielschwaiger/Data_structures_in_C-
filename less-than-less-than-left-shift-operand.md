@@ -2,7 +2,7 @@
 description: Explained shift operand
 ---
 
-# Lefts shift operand <<
+# << Left shift operand
 
 ![](<.gitbook/assets/Screen Shot 2022-12-12 at 3.53.13 PM.png>)
 
@@ -20,6 +20,13 @@ int main(void)
 	// number of bits to shift in this example is one.
 	result = var << 1;
 	printf("var shifted left is = %d\n", result);
+	
+	 
+	// for example, if the number of bits to shift is four:
+	result = var << 4;
+	// then, doing the math [3 * 2^4]
+	// result is 48
+	printf("var shifted left 4 bits = %d\n", result);
 
 	return (0);
 }

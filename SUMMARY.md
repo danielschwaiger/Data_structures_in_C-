@@ -4,4 +4,4 @@
 * [& (AND) Operand](and-and-operand.md)
 * [| (OR) Operand](or-or-operand.md)
 * [\~ NOT Operator](not-operator.md)
-* [Lefts shift operand <<](lefts-shift-operand-less-than-less-than.md)
+* [<< Left shift operand](less-than-less-than-left-shift-operand.md)

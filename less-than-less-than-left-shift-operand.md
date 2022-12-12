@@ -1,8 +1,8 @@
 ---
-description: Explained shift operand
+description: Explained left shift operand
 ---
 
-# << Left shift operand
+# << Left shift Operand
 
 ![](<.gitbook/assets/Screen Shot 2022-12-12 at 3.53.13 PM.png>)
 

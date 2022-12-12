@@ -4,4 +4,6 @@
 * [& (AND) Operand](and-and-operand.md)
 * [| (OR) Operand](or-or-operand.md)
 * [\~ NOT Operator](not-operator.md)
-* [<< Left shift operand](less-than-less-than-left-shift-operand.md)
+* [<< Left shift Operand](less-than-less-than-left-shift-operand.md)
+* [>> Right shift Operand](greater-than-greater-than-right-shift-operand.md)
+* [XOR Operand](xor-operand.md)

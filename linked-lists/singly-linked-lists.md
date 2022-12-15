@@ -15,3 +15,6 @@ In contrast, a binary tree is a data structure where the nodes are the units tha
 In that sense, I suppose a node describes something which holds relation to other nodes, whereas an element describes a unit of information itself. The list \[1]->\[2]->\[3]->\[NULL] is a series of nodes containing the elements 1, 2, and 3.
 
 In our libft project (42School), the generic linked list is a good example of a generalized container. Each node in the list is a struct with reference to an element, and a reference to the next node in the list. But the struct is a definition for the node, not for the data element referenced by the void pointer.
+
+* Append to a linked list with examples.
+* Insert at n position.

@@ -51,7 +51,7 @@ Example : \
 
 #define SECURITY_CHECK_FLAG 0b1         // 0000 0001
 #define TWO_FACTOR_AUTH_CHECK_FLAG 0b10 // 0000 0010
-#define DEFAULT_FLAG 0b100     		    // 0000 0100
+#define DEFAULT_FLAG 0b100     		// 0000 0100
 
 
 int main(void)

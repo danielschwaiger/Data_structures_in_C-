@@ -116,3 +116,52 @@ int main(void)
 	return (0);
 }
 ```
+
+Easier example of flags implementation after the previous one :D
+
+```c
+// * Easy flags implementation for memory optimization.
+
+#include <stdlib.h>
+#include <stdio.h>
+
+#define FIRST_FEATURE_FLAG 0b1               // 0000 0001
+#define SECOND_FEATURE_FLAG 0b10             // 0000 0010
+#define THIRD_FEATURE_FLAG 0b10000000        // 1000 0000
+
+
+int main(void)
+{
+	// As we did learned before in the previous example we can use less memory to store our flag status and only one variable!
+	// With this example we understand that also can be declared till 31 states of flags to play with!
+	unsigned int flags = FIRST_FEATURE_FLAG | SECOND_FEATURE_FLAG | THIRD_FEATURE_FLAG;
+
+	puts("--------------------------------------------------------");
+
+	// disabling FIRST_FEATURE_FLAG;
+	flags &= ~FIRST_FEATURE_FLAG;
+	// or also we can use this ^ operand to disable a flag!
+	flags ^= THIRD_FEATURE_FLAG;
+
+	// All states back on!
+	flags |= FIRST_FEATURE_FLAG;
+	flags |= THIRD_FEATURE_FLAG;
+
+	// Play with all the options!
+	puts("--------------------------------------------------------\n");
+
+	// Check !
+ 	if (flags & FIRST_FEATURE_FLAG)
+		printf("FIRST_FEATURE_FLAG is enabled\n");
+	if (flags & SECOND_FEATURE_FLAG)
+		printf("SECOND_FEATURE_FLAG is enabled\n");
+	if (flags & THIRD_FEATURE_FLAG)
+		printf("THIRD_FEATURE_FLAG is enabled\n");
+	puts("--------------------------------------------------------\n");
+	
+	return (0);
+}
+```
+
+Turning any char to binary ? Here is how to !
+

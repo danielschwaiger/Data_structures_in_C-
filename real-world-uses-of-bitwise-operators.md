@@ -43,3 +43,76 @@ Solution -> We don't need an entire byte to store just a zero or a one.\
 Example : \
 
 
+```c
+// * Flags implementation for memory optimization when we work with low hardware requirements example and C98 (no <stdbool.h>).
+
+#include <stdlib.h>
+#include <stdio.h>
+
+#define SECURITY_CHECK_FLAG 0b1         // 0000 0001
+#define TWO_FACTOR_AUTH_CHECK_FLAG 0b10 // 0000 0010
+#define DEFAULT_FLAG 0b100     		    // 0000 0100
+
+
+int main(void)
+{
+	/*
+		Bulky way of doing this usually when available <stdbool.h> :
+		Memory usage: 3 * sizeof(bool) = 3 bytes.
+	*/
+
+	/*
+		The optimized way:
+		Memory usage: sizeof(unigned short int) = 2bytes. 
+	*/
+	unsigned short int flags = 0;
+
+	puts("--------------------------------------------------------");
+	// Enabling and printing flags:
+	flags = flags | TWO_FACTOR_AUTH_CHECK_FLAG;
+	printf("TWO_FACTOR_AUTH is enabled  : %d\n", flags);            //    0000 0010
+	flags = flags | DEFAULT_FLAG;                                  //     0000 0100
+	printf("DEFAULT_FLAG flag is enabled: %d\n", flags);          //  6 = 0000 0110
+	puts("--------------------------------------------------------\n");
+	// Check if DEFAULT_FLAG is enabled!
+	if (flags & DEFAULT_FLAG)
+		// flags        0000 0110
+		// DEFAULT_FLAG 0000 0100
+		// &            0000 0110
+		printf("Check if DEFAULT_FLAG is enabled!\n"); //FLAG IS ENABLED AS WE DID PREVIOUSLY.
+	
+	// Check if others flags are enabled!
+	if (flags & SECURITY_CHECK_FLAG)
+		printf("SECURITY_CHECK_FLAG is enabled\n"); // FALSE !
+
+ 	if (flags & TWO_FACTOR_AUTH_CHECK_FLAG)
+		printf("TWO_FACTOR_AUTH_CHECK_FLAG is enabled\n"); // TRUE !
+	puts("--------------------------------------------------------\n");
+	printf("Disabling TWO_FACTOR_AUTH_CHECK_FLAG...\n");
+	// Disabling flags. How to!
+	flags ^= TWO_FACTOR_AUTH_CHECK_FLAG;
+	printf("TWO_FACTOR_AUTH_CHECK_FLAG status:  %d\n", flags);
+	//also posible to disable flags with & and ~ bitwise operands!
+	flags &= ~DEFAULT_FLAG;
+	printf("DEFAULT_FLAG status:  %d\n", flags);
+	puts("--------------------------------------------------------\n");
+	// Check !
+ 	if (flags & DEFAULT_FLAG)
+		printf("DEFAULT_FLAG is still enabled\n");
+	if (flags & TWO_FACTOR_AUTH_CHECK_FLAG)
+		printf("DEFAULT_FLAG is still enabled\n");
+	if (flags & SECURITY_CHECK_FLAG)
+		printf("SECURITY_CHECK_FLAG is still enabled\n");
+	puts("--------------------------------------------------------\n");
+	// Enabling Default flag!
+	if(!(flags & DEFAULT_FLAG))
+	{
+		flags |= DEFAULT_FLAG;
+		printf("Status of DEFAULT_FLAG changed to enabled! %d\n", flags);
+	}
+	//Swiching OFF.
+	flags &= ~DEFAULT_FLAG;
+	printf("ALL STATUS DISSABLED %d\n", flags);
+	return (0);
+}
+```

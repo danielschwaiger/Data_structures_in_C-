@@ -1,5 +1,5 @@
 ---
-description: Ok, those where the basics..but where would we actually use it?
+description: Ok, those where the basics..but where would we actually use them?
 ---
 
 # Real world uses of bitwise operators

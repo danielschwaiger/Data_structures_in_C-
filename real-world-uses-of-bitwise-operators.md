@@ -172,7 +172,7 @@ void to_binary(int n)
 { 
 	/*
 	    n = 2;
-	    i = 1 << 7 = 128
+	    i = 1 << 7 = 128 same as 0b10000000 same as 0000 0000 1000 0000
       	    i /= 128..64..32..16..8..4..2..1 while i > 0 !
 	    (n & i)  = 0 False
 	               0 False 

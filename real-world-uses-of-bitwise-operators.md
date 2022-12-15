@@ -181,7 +181,7 @@ void to_binary(int n)
 	               0 False
 		       0 False
 		       0 True
-		        0 False
+		       0 False
 	         
 	The only case that's True and prints a 1:
 

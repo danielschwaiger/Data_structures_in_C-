@@ -165,3 +165,42 @@ int main(void)
 
 Turning any char to binary ? Here is how to !
 
+```c
+#include <stdio.h>
+
+void to_binary(int n)
+{ 
+	/*
+	    n = 2;
+	    i = 1 << 7 = 128
+      	    i /= 128..64..32..16..8..4..2..1 while i > 0 !
+	    (n & i)  = 0 False
+	               0 False 
+		       0 False
+	               0 False
+	               0 False
+		       0 False
+		       0 True
+		        0 False
+	         
+	The only case that's True and prints a 1:
+
+	    &    0000 0010
+	         0000 0010
+	Output : 0000 0010 = (prints 1) True
+		
+	*/
+	
+	for(unsigned char i = 1 << 7; i > 0; i = i / 2)
+		(n & i) ? printf("1") : printf("0");
+}
+
+int main(void)
+{
+	unsigned int i = 2;
+
+	to_binary(i);
+
+	return (0);
+}
+```

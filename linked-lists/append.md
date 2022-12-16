@@ -47,6 +47,8 @@ void push_to_head(struct Node **head, int *new_data)
 
 void print_llst_values(struct Node *lst)
 {
+	if (lst->next == NULL)
+		return ;
 	while (lst != NULL)
 	{
 		printf("%i ", lst->data);

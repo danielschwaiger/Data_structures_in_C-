@@ -2,7 +2,7 @@
 description: Introduction
 ---
 
-# Bitwise Operands
+# 🛸 Bitwise Operands
 
 * Introduction to Bitwise Operators.
 * Types of Bitwise Operators.
@@ -11,3 +11,4 @@ description: Introduction
 * Bitwise NOT Operator.
 * Difference between bitwise and logical operators.
 * Code examples for each operand.
+* Real world uses of bitwise operators.

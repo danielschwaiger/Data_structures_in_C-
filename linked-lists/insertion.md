@@ -26,6 +26,7 @@ struct Node
 	struct Node *next;
 };
 
+// Using previous function to add elements to our llst.
 void push_to_head(struct Node **head, int new_data)
 {
 	struct Node *temp = (struct Node *)malloc(sizeof(struct Node));

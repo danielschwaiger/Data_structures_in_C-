@@ -16,5 +16,6 @@ In that sense, I suppose a node describes something which holds relation to othe
 
 In our libft project (42School), the generic linked list is a good example of a generalized container. Each node in the list is a struct with reference to an element, and a reference to the next node in the list. But the struct is a definition for the node, not for the data element referenced by the void pointer.
 
+* Simple construction of a singly linked list
 * Append to a linked list with examples.
 * Insert at n position.

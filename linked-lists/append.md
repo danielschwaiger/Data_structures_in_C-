@@ -58,10 +58,10 @@ int main()
 
 	// we insert 10 numbers inside our each element in llst !
 	// TODO next time generate random number from a funcion
-	for (int i = 21; i --> 10;)
+	for (int i = 20; i --> 10;)
 		push_to_head(&head, &i);
 
-	// prints out the values that we generated in the previus step with for loop
+	// prints out the values that we generated in the previous step with for loop
 	print_llst_values(head);
 	return (0);
 }

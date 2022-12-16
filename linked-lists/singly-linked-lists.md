@@ -21,5 +21,5 @@ In our libft project (42School), the generic linked list is a good example of a 
 ### Index:
 
 * Simple construction of a singly linked list
-* Append to a linked list with examples.
-* Insert at a given n position.
+* Append / push to head
+* Insertion - after a given node.

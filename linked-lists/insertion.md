@@ -2,7 +2,7 @@
 description: Add a node after a given node.
 ---
 
-# 👽 Insertion
+# 👽 Insertion - after a given node
 
 Insert a new node at a given position 5 steps process !
 

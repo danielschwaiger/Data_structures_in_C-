@@ -2,7 +2,7 @@
 description: Insertion or push to head
 ---
 
-# 🤟 Append
+# 🤟 Append / push to head
 
 Code example:
 

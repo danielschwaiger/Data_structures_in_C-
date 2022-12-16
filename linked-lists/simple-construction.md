@@ -4,6 +4,8 @@ description: Simple construction of a singly linked list
 
 # 💀 Simple construction
 
+Code example:
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>

@@ -4,6 +4,8 @@ description: Insertion or push to head
 
 # 🤟 Append
 
+Code example:
+
 ```c
 /**
  * @brief 

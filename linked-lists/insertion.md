@@ -62,6 +62,8 @@ void push_after(struct Node *prev_node, int new_data)
 
 void print_llst_content(struct Node *lst)
 {
+	if (lst->next == NULL)
+		return ;
 	while (lst != NULL)
 	{
 		printf("%i ", lst->data);

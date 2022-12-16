@@ -2,7 +2,7 @@
 description: Simple construction of a singly linked list
 ---
 
-# Simple construction
+# 💀 Simple construction
 
 ```c
 #include <stdio.h>

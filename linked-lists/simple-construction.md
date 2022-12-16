@@ -20,7 +20,9 @@ int len_linklst(struct Node *lst)
 {
 	struct Node *ptr = lst;
 	size_t len = 0;
-
+	
+	if (lst->next == NULL)
+		return (0);
 	while(ptr != NULL)
 	{
 		ptr = ptr->next;

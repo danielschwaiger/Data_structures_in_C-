@@ -14,7 +14,7 @@ struct Node
 	struct Node *next;
 };
 
-int ft_len_linklst(struct Node *lst)
+int len_linklst(struct Node *lst)
 {
 	struct Node *ptr = lst;
 	size_t len = 0;
@@ -120,7 +120,7 @@ int main()
 
 
  	//function to find out size of singly linked list !
-	printf("Size of lst is : %i\n", ft_len_linklst(head));
+	printf("Size of lst is : %i\n", len_linklst(head));
 	
 	//function to print out the data inside linked lists TRAVERSAL !
 	print_lst_data(head);

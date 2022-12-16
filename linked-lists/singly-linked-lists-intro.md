@@ -2,7 +2,7 @@
 description: Linked lists with example
 ---
 
-# Singly Linked Lists
+# ⏭ Singly Linked Lists - intro
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-09-19 at 5.01.10 PM.png" alt=""><figcaption></figcaption></figure>
 

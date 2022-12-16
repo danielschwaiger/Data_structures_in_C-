@@ -11,7 +11,8 @@
 
 ## 🔗 Linked Lists
 
-* [Singly Linked Lists](linked-lists/singly-linked-lists.md)
+* [⏭ Singly Linked Lists - intro](linked-lists/singly-linked-lists-intro.md)
 * [💀 Simple construction](linked-lists/simple-construction.md)
 * [🤟 Append / push to head](linked-lists/append.md)
 * [👽 Insertion - after a given node](linked-lists/insertion.md)
+* [🧐 Insertion - at the end](linked-lists/insertion-at-the-end.md)

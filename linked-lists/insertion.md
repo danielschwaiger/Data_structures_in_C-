@@ -18,12 +18,12 @@ We are given a pointer to a node, and the new node is inserted after the given n
 
 
 	
-       	     fourth         sixth          seventh
-		|             |             |
-		|             |             | 
-	    +---+---+     +---+---+     +----+----+
-	    | 4  | o----->| 5 | o-----> |  # |  # |
-	    +---+---+     +---+---+     +----+----+ 
+       	     fourth         sixth          
+		|             |
+		|             |
+	    +---+---+     +---+---+     
+	    | 4  | o----->| 5 | o-----> NULL
+	    +---+---+     +---+---+      
 ```
 
 Fourth and sixth being new nodes added inside the linked list Node.\

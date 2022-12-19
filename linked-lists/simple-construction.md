@@ -33,6 +33,8 @@ int len_linklst(struct Node *lst)
 
 void print_lst_data(struct Node *element)
 {
+	if (element->next = NULL)
+		return ;
 	while(element != NULL)
 	{
 		printf("%i\n", element->data);

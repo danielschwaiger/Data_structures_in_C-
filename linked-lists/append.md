@@ -4,6 +4,8 @@ description: Insertion or push to head
 
 # 🤟 Append / push to head
 
+<figure><img src="../.gitbook/assets/Screen Shot 2022-12-19 at 2.16.48 PM.png" alt=""><figcaption></figcaption></figure>
+
 Code example:
 
 ```c

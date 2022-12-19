@@ -81,7 +81,7 @@ int main(void)
 	//print out the content inserted !
 	print_llst_content(head);
 	puts("\n");
-	// call the function to insert the node at a given position.
+	// call the function to insert the node at a given node.
 	// it will only insert between second and not first node till  in the previos node and not at the end!! wich is next to NULL.
 	push_after(head->next,  55);
 

@@ -86,6 +86,8 @@ int main(void)
 	push_after(head->next,  55);
 
 	print_llst_content(head);
+	
+	free(head);
 	return (0);
 }
 ```

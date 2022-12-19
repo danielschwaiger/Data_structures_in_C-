@@ -98,6 +98,8 @@ int main(void)
 	append(&head, 30); puts("\n");
 	// print lls content !
 	prints_lls_content(head); 
+	
+	free(head);
 	return (0);
 }
 ```

@@ -87,7 +87,7 @@ int main(void)
 
 	print_llst_content(head);
 	
-	free(head);
+	//TODO - Check leaks.
 	return (0);
 }
 ```

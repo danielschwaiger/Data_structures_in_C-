@@ -70,7 +70,7 @@ int main()
 	// prints out the values that we generated in the previous step with for loop
 	print_llst_values(head);
 	
-	free(head);
+	//TODO - Check leaks.
 	return (0);
 }
 ```

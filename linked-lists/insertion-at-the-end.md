@@ -99,7 +99,7 @@ int main(void)
 	// print lls content !
 	prints_lls_content(head); 
 	
-	free(head);
+	//TODO - Check leaks.
 	return (0);
 }
 ```

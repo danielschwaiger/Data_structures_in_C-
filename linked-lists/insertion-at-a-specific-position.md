@@ -106,6 +106,8 @@ int main(void)
 	if (head != NULL)
 		print_lls_content(head);
 		
+	
+	//TODO - Check leaks.
 	return (0);
 }
 ```

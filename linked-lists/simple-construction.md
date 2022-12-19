@@ -131,7 +131,7 @@ int main()
 	//function to print out the data inside linked lists TRAVERSAL !
 	print_lst_data(head);
 	
-	free(head);
+	//TODO - Check leaks.
 	return (0);
 }
 ```

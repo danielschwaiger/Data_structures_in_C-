@@ -111,3 +111,31 @@ int main(void)
 	return (0);
 }
 ```
+
+Second aproach:\
+
+
+```c
+void	insert_at_position_n(t_node **head, int position, int new_data)
+{
+	if (position <= 1 || position > check_size(head))
+	{
+		printf("\nInvalid Position!!!!!!!!!!!!!");
+		exit(0);
+	}
+	t_node *aux = *head;	
+	t_node *new_node = (t_node *)malloc(sizeof(t_node));
+	
+	new_node->data = new_data;
+	new_node->next = NULL;
+
+	position--;
+	while (position != 1)
+	{ 
+		aux = aux->next;
+		position--;
+	}
+	new_node->next = aux->next;
+	aux->next = new_node;
+}
+```

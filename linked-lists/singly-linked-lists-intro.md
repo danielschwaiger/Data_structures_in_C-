@@ -25,3 +25,7 @@ In our libft project (42School), the generic linked list is a good example of a 
 * Insertion - after a given node.
 * Insertion - at the end.
 * Insertion - at a specific position.
+* Deletion - the first node (head).
+* Deletion - at given node.
+* Deletion - at a specific position
+

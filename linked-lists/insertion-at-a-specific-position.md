@@ -44,9 +44,9 @@ int check_size(t_node **head)
 void	insert_at_position_n(t_node **head, int position, int new_data)
 {
 	t_node *ptr = *head;
-	int node = 0;
+	int node = 1;
 
-	if (position < 1 || position > check_size(head))
+	if (position <= 1 || position > check_size(head))
 		printf("\nInvalid Position!!!!!!!!!!!!!");
 	
 	t_node *new_node = (t_node *)malloc(sizeof(t_node));

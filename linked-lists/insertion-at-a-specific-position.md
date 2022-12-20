@@ -125,7 +125,8 @@ void	insert_at_position_n(t_node **head, int position, int new_data)
 	}
 	t_node *aux = *head;	
 	t_node *new_node = (t_node *)malloc(sizeof(t_node));
-	
+	if (!new_node)
+		return ;
 	new_node->data = new_data;
 	new_node->next = NULL;
 

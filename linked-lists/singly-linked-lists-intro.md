@@ -20,6 +20,8 @@ In our libft project (42School), the generic linked list is a good example of a 
 
 ### Index:
 
-* Simple construction of a singly linked list
-* Append / push to head
+* Simple construction of a singly linked list.
+* Append / push to head.
 * Insertion - after a given node.
+* Insertion - at the end.
+* Insertion - at a specific position.

@@ -151,3 +151,19 @@ void push(node_t **head, int new_data)
 
 Pop or return the deleted node example:
 
+```c
+// works as well if you need to display the value that just poped out! 
+// Just call the function as head = delete_head(head);
+
+node_t	*delete_head(node_t *lst) 
+{
+	if (lst) 
+	{
+		node_t *temp = lst;
+		lst = lst->next;
+		free(temp);
+	}
+	return (lst);
+}
+```
+

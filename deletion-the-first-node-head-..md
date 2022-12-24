@@ -1,4 +1,8 @@
-# Page 1
+---
+description: Deletion of a node at the start of a linked list.
+---
+
+# Deletion - the first node (head).
 
 ````c
 ```c

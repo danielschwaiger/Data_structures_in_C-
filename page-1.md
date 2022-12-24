@@ -94,7 +94,6 @@ void	initialize_head(node_t **head)
 	*head = NULL;
 }
 
-
 void print_content(node_t *lst)
 {
 	while (lst != NULL)

@@ -20,4 +20,4 @@
 
 ***
 
-* [Deletion - the first node (head).](deletion-the-first-node-head-..md)
+* [Deletion - the first node (head).](page-1.md)

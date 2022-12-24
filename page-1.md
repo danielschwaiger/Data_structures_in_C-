@@ -4,7 +4,6 @@ description: Deletion of a node at the start of a linked list.
 
 # Deletion - the first node (head).
 
-````c
 ```c
 /**
  * @brief 
@@ -151,7 +150,6 @@ void push(node_t **head, int new_data)
 	(*head) = new_node;
 }
 ```
-````
 
 Pop or return the deleted node example:
 

@@ -41,7 +41,7 @@ void push_to_head(struct Node **head, int *new_data)
 	temp->data = *new_data;
 
 	// make next of new node as head
-	temp->next = (*head);
+	temp->next = (*head); // works as well without () ! To not create confusion!
 
 	// move the head to point to the new node!
 	(*head) = temp;

@@ -80,10 +80,10 @@ int main(void)
 	print_content(head); puts("\n");
 
 	insert_after(head->next, 100);
-	push(&head, 1000); // insert value 1000
+	push(&head, 1000);
 	print_content(head); puts("\n");
 	
-	delete_head(&head); // delete value 1000
+	delete_head(&head);
 	print_content(head); puts("\n");
 
 	return (0);

@@ -20,4 +20,4 @@
 
 ***
 
-* [Deletion - the first node (head).](page-1.md)
+* [😩 Deletion - the first node (head).](page-1.md)

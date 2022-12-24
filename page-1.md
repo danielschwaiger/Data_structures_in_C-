@@ -1,6 +1,9 @@
-# Page 1
+---
+description: Deletion of a node at the start of a linked list.
+---
 
-````c
+# 😩 Deletion - the first node (head).
+
 ```c
 /**
  * @brief 
@@ -39,22 +42,22 @@ void	push(node_t **head, int new_data);
 	* 3. Now delete the first node.
 
 
-		      head         second         third
-			|             |             |
-			|             |             |
+		   head         second         third
+		     |             |             |
+		     |             |             |
 		+---+---+     +---+---+     +----+----+
-		| 1  | o----->| 2 | o-----> |  # |  # |
+		| 1  | o----->| 2 | o------>|  # |  # |
 		+---+---+     +---+---+     +----+----+ 
 
 
-		    head(temp)    XsecondX      "third"
-			|             |             |
-			X(free)       |             |
-		+---+---+     +---+---+     +----+----+
-		| 1  | o---X-->| 2 | o-----> |  # |  # |
-		+---+---+     +---+---+     +----+----+    
-				  ^					^
-				new head!			second!..   
+		  head(temp)    XsecondX      "third"
+		    |             |             |
+            X(free) |             |             |
+		+---+---+      +---+---+     +----+----+
+		| 1  | o---X-->| 2 | o------>|  # |  # |
+		+---+---+      +---+---+     +----+----+    
+				  ^		 ^
+		             new head!	      second!..   
 
 */
 
@@ -147,7 +150,6 @@ void push(node_t **head, int new_data)
 	(*head) = new_node;
 }
 ```
-````
 
 Pop or return the deleted node example:
 

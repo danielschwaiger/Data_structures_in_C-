@@ -18,7 +18,7 @@ typedef struct node
 {
 	int data;
 	struct node *next;
-}				node_t;
+}		   node_t;
 
 void	initialize_head(node_t **head);
 void	print_content(node_t *lst);

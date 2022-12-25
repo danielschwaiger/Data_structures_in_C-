@@ -4,6 +4,10 @@ description: Deletion of a node at the start of a linked list.
 
 # 😩 Deletion - the first node (head).
 
+
+
+Code example:
+
 ```c
 /**
  * @brief 

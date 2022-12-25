@@ -110,9 +110,8 @@ void	delete_head(node_t **lst)
 		node_t *temp = *lst;
      		*lst = temp->next;
 		// (*lst) works as well as its pointing to the same address for next value 42  in this case !
-		/* *lst = (*lst)->next;  */
-    		free(temp); 
-    		// TOFIX - find solution for the lost blocks !!! 
+		/* *lst = (*lst)->next; */
+    		free(temp); // TOFIX - not solving leaks !! 
 		temp = NULL;
     	}
 }

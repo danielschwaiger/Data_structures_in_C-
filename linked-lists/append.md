@@ -42,7 +42,7 @@ void push_to_head(struct Node **head, int *new_data)
 
 	// make next of new node as head
 	temp->next = (*head); // works as well without () ! To not create confusion!
-
+			      // The '*' to dereferences back to the real head
 	// move the head to point to the new node!
 	(*head) = temp;
 }

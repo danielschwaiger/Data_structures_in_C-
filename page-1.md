@@ -114,7 +114,7 @@ void	delete_head(node_t **lst)
 		node_t *temp = *lst;
      		*lst = temp->next;
 		// (*lst) works as well as its pointing to the same address for next value 42  in this case !
-		/* *lst = (*lst)->next; */
+		/* *lst = (*lst)->next; */ // By enclosing the dereference operation in brackets you can specify that you want it to be bound first before the member access.
     		free(temp); // TOFIX - not solving leaks !! 
 		temp = NULL;
     	}

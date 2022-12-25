@@ -21,3 +21,4 @@
 ***
 
 * [😩 Deletion - the first node (head).](page-1.md)
+* [🤨 Deletion - the last node](deletion-the-last-node.md)

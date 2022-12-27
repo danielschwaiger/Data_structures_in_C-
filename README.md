@@ -4,7 +4,7 @@ description: Introduction
 
 # 🛸 Bitwise Operands
 
-* Introduction to Bitwise Operators.
+* Introduction to [Bitwise Operators](https://daniels-organization-5.gitbook.io/bitwise-operands/).
 * Types of Bitwise Operators.
 * Bitwise AND Operator.
 * Bitwise OR Operator.
